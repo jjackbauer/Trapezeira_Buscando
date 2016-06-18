@@ -4,20 +4,20 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Driver.cpp 
+../Classe\ Matriz\ (Ricardo)/Matriz.cpp 
 
 OBJS += \
-./Driver.o 
+./Classe\ Matriz\ (Ricardo)/Matriz.o 
 
 CPP_DEPS += \
-./Driver.d 
+./Classe\ Matriz\ (Ricardo)/Matriz.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-%.o: ../%.cpp
+Classe\ Matriz\ (Ricardo)/Matriz.o: ../Classe\ Matriz\ (Ricardo)/Matriz.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross G++ Compiler'
-	g++ -lm -I"/home/ricardo/Dropbox/Workspace/Trapezeira_Buscando" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	g++ -lm -I"/home/ricardo/Dropbox/Workspace/Trapezeira_Buscando" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Classe Matriz (Ricardo)/Matriz.d" -MT"Classe\ Matriz\ (Ricardo)/Matriz.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
